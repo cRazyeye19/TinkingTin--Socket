@@ -47,3 +47,5 @@ io.on("connection", (socket) => {
 
 const PORT = process.env.PORT || 8000;
 io.listen(PORT, () => console.log(`Socket server running on port ${PORT}`));
+console.log("CORS_ORIGIN:", process.env.CORS_ORIGIN);
+console.log("PORT:", process.env.PORT);
